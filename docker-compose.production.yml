@@ -12,19 +12,19 @@ services:
     volumes:
       - kit_data:/var/lib/postgresql/data
   backend:
-    image: jaguar0505/kitty_backend
+    image: jaguar0505/kittygram_backend
     env_file: .env
     volumes:
       - static:/static/
       - media:/app/media/
   frontend:
-    image: jaguar0505/kitty_frontend
+    image: jaguar0505/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
-    image: jaguar0505/kitty_gateway
+    image: jaguar0505/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
