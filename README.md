@@ -77,12 +77,12 @@
     sudo docker compose -f docker-compose.production.yml up -d
     ```
 
-6. Выполните миграции, соберите статику бэкенда и скопируйте их в /backend_static/static/:
+6. Выполните миграции, соберите статику бэкенда и скопируйте их в /static/static/:
 
     ```bash
     sudo docker compose -f docker-compose.production.yml exec backend python manage.py migrate
     sudo docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
-    sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
+    sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /static/static/
     ```
  
 ### Технологии и необходимые ниструменты: 
