@@ -1,6 +1,5 @@
- ![Main kittygram workflow](https://github.com/Jaguar0505/kittygram_final/actions/workflows/main/badge.svg)
+ ![Main kittygram workflow](https://github.com/Jaguar0505/kittygram_final/actions/workflows/main.yml/badge.svg)
 
-Simple REST-service example written in Go
 
  # Kittygram - блог для размещение фотографий котов. 
  
