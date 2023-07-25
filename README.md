@@ -1,5 +1,6 @@
- ![main.yml]
- (https://github.com/Jaguar0505/kittygram_final/actions/workflows/main.yml/badge.svg)
+ ![Main kittygram workflow](https://github.com/Jaguar0505/kittygram_final/actions/workflows/main/badge.svg)
+
+Simple REST-service example written in Go
 
  # Kittygram - блог для размещение фотографий котов. 
  
@@ -94,4 +95,4 @@
 - Nginx 
 - Gunicorn 
 - Django (backend) 
-- React (frontend) 
+- React (frontend)
